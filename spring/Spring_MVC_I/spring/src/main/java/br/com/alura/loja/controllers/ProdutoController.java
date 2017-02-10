@@ -17,7 +17,6 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import br.com.alura.loja.dao.ProdutoDAO;
-import br.com.alura.loja.infra.FileSaver;
 import br.com.alura.loja.models.Produto;
 import br.com.alura.loja.models.TipoPreco;
 import br.com.alura.loja.validation.ProdutoValidation;
@@ -26,8 +25,8 @@ import br.com.alura.loja.validation.ProdutoValidation;
 @RequestMapping("/produtos")
 public class ProdutoController {
 	
-    @Autowired
-    private FileSaver fileSaver;
+   // @Autowired
+   // private FileSaver fileSaver;
 	
 	@Autowired
 	private ProdutoDAO produtoDAO;
